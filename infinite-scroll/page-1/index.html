@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サザンオールスター「DIRTY OLD MAN ～さらば夏よ～」</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div id="container">
+<div class="wrapper">
+<div class="pages">
+<h2>サザンオールスター「DIRTY OLD MAN ～さらば夏よ～」</h2>
+<!-- <div class="pages-wrapper"> -->
+<!-- <div class="text-box"> -->
+<p>主人公DIRTY OLD MANは、成功の裏にある人知れぬ空虚感や寂しさ、過去を美化してしまったときの惨めな気持ち。
+これらの感情はふとした瞬間に自身を襲い、打ちのめしてゆくのだが、それでも明日を信じて戦おうとしている。
+この曲は、見栄や虚勢ではなく素顔のままで生きようともがく全ての人々に向けての賛歌なのです。</p>
+<!-- </div> -->
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/RUxJfcDxNsk?si=gCUY2AqbHtiWmQFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div><!-- /.video-wrapper -->
+</div><!-- /.pages-wrapper -->
+</div><!-- pages -->
+</div><!-- /.wrapper -->
+<a href="page-2" id="next">次のページ</a>
+</div><!-- container -->
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+<script>
+
+/* トップページへのリダイレクト */
+setTimeout("redirect()", 0);
+function redirect(){
+location.href='../index.html';
+}
+$('#container').cleverInfiniteScroll({
+contentsWrapperSelector: '#container',
+contentSelector: '.wrapper',
+nextSelector: '#next',
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>サザンオールスターズ - 彩〜Aja〜</title>
+</head>
+
+<body>
+<div id="container">
+<div class="wrapper">
+<div class="pages">
+<h2>サザンオールスターズ - 彩〜Aja〜</h2>
+<p>JAL悟空”CMソング「彩～Aja～」を収録した、サザンオールスターズの12センチCDシングルは、春らしい心地よいサウンドに乗せて切なく染み入るスプリング･ラブソング</p>
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/BS_X6_Zrc6Q?si=wrvEF1Pp5tKzprtZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div><!-- /.video-wrapper -->
+</div><!-- pages -->
+</div><!-- /.wrapper -->
+<a href="page-3" id="next">次のページ</a>
+
+</div><!-- container -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+<script>
+
+/* トップページへのリダイレクト */
+setTimeout("redirect()", 0);
+function redirect(){
+location.href='../index.html';
+}
+$('#container').cleverInfiniteScroll({
+contentsWrapperSelector: '#container',
+contentSelector: '.wrapper',
+nextSelector: '#next',
+});
+
+</script>
+</body>
+
+</html>
